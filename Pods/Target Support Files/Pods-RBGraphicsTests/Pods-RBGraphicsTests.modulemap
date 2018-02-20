@@ -1,0 +1,6 @@
+framework module Pods_RBGraphicsTests {
+  umbrella header "Pods-RBGraphicsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

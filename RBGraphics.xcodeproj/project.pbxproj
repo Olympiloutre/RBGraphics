@@ -10,6 +10,9 @@
 		8DB0195B203CBA800021D63F /* RBGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB01951203CBA800021D63F /* RBGraphics.framework */; };
 		8DB01960203CBA800021D63F /* RBGraphicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0195F203CBA800021D63F /* RBGraphicsTests.swift */; };
 		8DB01962203CBA800021D63F /* RBGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB01954203CBA800021D63F /* RBGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DB0196D203CBC760021D63F /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0196C203CBC760021D63F /* ProgressButton.swift */; };
+		9DDBED5063BD0526B7E8FC38 /* Pods_RBGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED22FC58FDE72148072E5831 /* Pods_RBGraphics.framework */; };
+		D874E941E1A9B4496C3AEC28 /* Pods_RBGraphicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A089116CE294A1968B29C1 /* Pods_RBGraphicsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A6028820A57382AB071F266 /* Pods-RBGraphics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBGraphics.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBGraphics/Pods-RBGraphics.release.xcconfig"; sourceTree = "<group>"; };
+		26ECC208AF9117DADD38E16B /* Pods-RBGraphicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBGraphicsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBGraphicsTests/Pods-RBGraphicsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DB01951203CBA800021D63F /* RBGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB01954203CBA800021D63F /* RBGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBGraphics.h; sourceTree = "<group>"; };
 		8DB01955203CBA800021D63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB0195A203CBA800021D63F /* RBGraphicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBGraphicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB0195F203CBA800021D63F /* RBGraphicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBGraphicsTests.swift; sourceTree = "<group>"; };
 		8DB01961203CBA800021D63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DB0196C203CBC760021D63F /* ProgressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
+		8ED78CFCFC46F8D38FBCFF9A /* Pods-RBGraphics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBGraphics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBGraphics/Pods-RBGraphics.debug.xcconfig"; sourceTree = "<group>"; };
+		96A089116CE294A1968B29C1 /* Pods_RBGraphicsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBGraphicsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C3EE8B87835E5A7383CB64 /* Pods-RBGraphicsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBGraphicsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBGraphicsTests/Pods-RBGraphicsTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED22FC58FDE72148072E5831 /* Pods_RBGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDBED5063BD0526B7E8FC38 /* Pods_RBGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +55,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DB0195B203CBA800021D63F /* RBGraphics.framework in Frameworks */,
+				D874E941E1A9B4496C3AEC28 /* Pods_RBGraphicsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7446E6A933C993AD973A3A91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED22FC58FDE72148072E5831 /* Pods_RBGraphics.framework */,
+				96A089116CE294A1968B29C1 /* Pods_RBGraphicsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8DB01947203CBA7E0021D63F = {
 			isa = PBXGroup;
 			children = (
 				8DB01953203CBA800021D63F /* RBGraphics */,
 				8DB0195E203CBA800021D63F /* RBGraphicsTests */,
 				8DB01952203CBA800021D63F /* Products */,
+				D736CFAA550FCEFDE56E5A77 /* Pods */,
+				7446E6A933C993AD973A3A91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +94,7 @@
 		8DB01953203CBA800021D63F /* RBGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				8DB0196B203CBC4D0021D63F /* Progress */,
 				8DB01954203CBA800021D63F /* RBGraphics.h */,
 				8DB01955203CBA800021D63F /* Info.plist */,
 			);
@@ -84,6 +108,25 @@
 				8DB01961203CBA800021D63F /* Info.plist */,
 			);
 			path = RBGraphicsTests;
+			sourceTree = "<group>";
+		};
+		8DB0196B203CBC4D0021D63F /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				8DB0196C203CBC760021D63F /* ProgressButton.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		D736CFAA550FCEFDE56E5A77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8ED78CFCFC46F8D38FBCFF9A /* Pods-RBGraphics.debug.xcconfig */,
+				0A6028820A57382AB071F266 /* Pods-RBGraphics.release.xcconfig */,
+				26ECC208AF9117DADD38E16B /* Pods-RBGraphicsTests.debug.xcconfig */,
+				C5C3EE8B87835E5A7383CB64 /* Pods-RBGraphicsTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DB01965203CBA800021D63F /* Build configuration list for PBXNativeTarget "RBGraphics" */;
 			buildPhases = (
+				B2A82893023E3E48771DA368 /* [CP] Check Pods Manifest.lock */,
 				8DB0194C203CBA800021D63F /* Sources */,
 				8DB0194D203CBA800021D63F /* Frameworks */,
 				8DB0194E203CBA800021D63F /* Headers */,
 				8DB0194F203CBA800021D63F /* Resources */,
+				5635FC663BEA9AFC544B9324 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DB01968203CBA800021D63F /* Build configuration list for PBXNativeTarget "RBGraphicsTests" */;
 			buildPhases = (
+				C2C3CF4CA270F759BC6320D7 /* [CP] Check Pods Manifest.lock */,
 				8DB01956203CBA800021D63F /* Sources */,
 				8DB01957203CBA800021D63F /* Frameworks */,
 				8DB01958203CBA800021D63F /* Resources */,
+				DEEC09BE64946FB7E94D89E9 /* [CP] Embed Pods Frameworks */,
+				5CDE96D490EF4440DC33EAAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +196,7 @@
 				TargetAttributes = {
 					8DB01950203CBA800021D63F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					8DB01959203CBA800021D63F = {
@@ -191,11 +240,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5635FC663BEA9AFC544B9324 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBGraphics/Pods-RBGraphics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CDE96D490EF4440DC33EAAC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBGraphicsTests/Pods-RBGraphicsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2A82893023E3E48771DA368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RBGraphics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C3CF4CA270F759BC6320D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RBGraphicsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEEC09BE64946FB7E94D89E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBGraphicsTests/Pods-RBGraphicsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DB0194C203CBA800021D63F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB0196D203CBC760021D63F /* ProgressButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +467,9 @@
 		};
 		8DB01966203CBA800021D63F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED78CFCFC46F8D38FBCFF9A /* Pods-RBGraphics.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -342,10 +478,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RBGraphics/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myself.RBGraphics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -353,7 +491,9 @@
 		};
 		8DB01967203CBA800021D63F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6028820A57382AB071F266 /* Pods-RBGraphics.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -362,6 +502,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RBGraphics/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myself.RBGraphics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -373,7 +514,9 @@
 		};
 		8DB01969203CBA800021D63F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26ECC208AF9117DADD38E16B /* Pods-RBGraphicsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RBGraphicsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -386,7 +529,9 @@
 		};
 		8DB0196A203CBA800021D63F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C3EE8B87835E5A7383CB64 /* Pods-RBGraphicsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RBGraphicsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
