@@ -23,17 +23,17 @@ public enum ProgressButtonState {
 
 
 @IBDesignable
-class ProgressButton : UIView {
+open class ProgressButton : UIView {
     
     /** Color */
-    @IBInspectable var color: UIColor = UIColor.gray{
+    @IBInspectable open var color: UIColor = UIColor.gray{
         didSet {
             self.setNeedsDisplay()
         }
     }
 
     /** border size */
-    @IBInspectable var border: CGFloat = 2.0{
+    @IBInspectable open var border: CGFloat = 2.0{
         didSet {
             self.setNeedsDisplay()
         }
@@ -43,21 +43,21 @@ class ProgressButton : UIView {
      Current item state.
      When set ProgressButton will redraw automatically
      */
-    var state: ProgressButtonState = .start {
+    open var state: ProgressButtonState = .start {
         didSet{
             self.setNeedsDisplay()
         }
     }
     
     /** Progress percent ( for .progress purposes )  */
-    var percent: CGFloat = 0.0 {
+    open var percent: CGFloat = 0.0 {
         didSet{
             self.setNeedsDisplay()
         }
     }
     
     /** Closure action to be performed when download state is tapped */
-    var downloadAction: () -> Void = {}
+    open var downloadAction: () -> Void = {}
     
     /**
      Side of the square that can fit into the uiview ( to fit every further drawing )
@@ -93,7 +93,7 @@ class ProgressButton : UIView {
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -101,12 +101,12 @@ class ProgressButton : UIView {
     /**
      Overriding IB display
      */
-    override func prepareForInterfaceBuilder() {
+    override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         self.setNeedsDisplay()
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         self.setNeedsDisplay()
     }
@@ -137,7 +137,7 @@ class ProgressButton : UIView {
      Overriding draw method to be computed each time view need to get displayed again
      Mandatory to use UIBezierPath
      */
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         
         switch state {
             case .start: drawArrow()
