@@ -150,11 +150,13 @@ open class ProgressButton : UIView {
     fileprivate func drawArrow(){
         path = UIBezierPath()
         
-        path.move(to: CGPoint(x: self.frame.size.width/2, y: (self.frame.size.height - side)/2 + padding))
-        path.addLine(to: CGPoint(x: self.frame.size.width/2, y: (self.frame.size.height + side - border)/2 - padding))
-        path.move(to: CGPoint(x: (self.frame.size.width + side - border)/2 - padding, y: (self.frame.size.height )/2))
-        path.addLine(to: CGPoint(x: (self.frame.size.width)/2, y: (self.frame.size.height + side - border)/2 - padding))
-        path.addLine(to: CGPoint(x: (self.frame.size.width - side + border)/2 + padding, y: (self.frame.size.height )/2 ))
+        let padding_plus : CGFloat = padding * 110 / 100
+        
+        path.move(to: CGPoint(x: self.frame.size.width/2, y: (self.frame.size.height - side)/2 + padding_plus))
+        path.addLine(to: CGPoint(x: self.frame.size.width/2, y: (self.frame.size.height + side - border)/2 - padding_plus))
+        path.move(to: CGPoint(x: (self.frame.size.width + side - border)/2 - padding_plus, y: (self.frame.size.height )/2))
+        path.addLine(to: CGPoint(x: (self.frame.size.width)/2, y: (self.frame.size.height + side - border)/2 - padding_plus))
+        path.addLine(to: CGPoint(x: (self.frame.size.width - side + border)/2 + padding_plus, y: (self.frame.size.height )/2 ))
 
         path.lineWidth = border
         color.setStroke()
