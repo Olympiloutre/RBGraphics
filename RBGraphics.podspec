@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.swift_version = '4.0'
 
     # Semantic Versionning - major.minor.patch
-    s.version = "0.1.2"
+    s.version = "0.1.3"
 
     # License Type - doesn't work
     # s.license = { :type => "MIT", :file => "LICENSE" }

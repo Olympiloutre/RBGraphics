@@ -132,7 +132,7 @@ open class ProgressButton : UIView {
         }
     }
     
-    // MARK:- Draw 
+    // MARK:- Draw  
     /**
      Overriding draw method to be computed each time view need to get displayed again
      Mandatory to use UIBezierPath
